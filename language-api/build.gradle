@@ -9,14 +9,14 @@ java {
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'org.jetbrains:annotations:24.0.1'
 
     compileOnly project(path: ':android-stubs')
 }
 
 spotless {
-		java {
-			target "**/*.java"
-			googleJavaFormat()
-			}
+    java {
+        target "**/*.java"
+        googleJavaFormat()
+    }
 }
