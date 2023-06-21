@@ -4,7 +4,7 @@ plugins {
 apply plugin: 'com.diffplug.spotless'
 
 dependencies {
-    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
     implementation project(path: ':build-logic')
     implementation project(path: ':project')
     implementation project(path: ':logging')
@@ -23,8 +23,8 @@ java {
 }
 
 spotless {
-		java {
-			target "**/*.java"
-			googleJavaFormat()
-			}
+    java {
+	target "**/*.java"
+	googleJavaFormat()
+    }
 }
