@@ -6,7 +6,7 @@ apply plugin: 'com.diffplug.spotless'
 
 dependencies {
 	implementation project(path: ':common')
-    api "com.android.tools.build:apksig:8.2.0-alpha02"   
+    api "com.android.tools.build:apksig:8.0.2"   
     api "org.bouncycastle:bcprov-jdk15on:1.70"
 }
 java {
@@ -15,8 +15,8 @@ java {
 }
 
 spotless {
-		java {
-			target "**/*.java"
-			googleJavaFormat()
-			}
+    java {
+        target "**/*.java"
+        googleJavaFormat()
+    }
 }
